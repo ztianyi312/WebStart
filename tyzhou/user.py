@@ -10,11 +10,11 @@ class User(Model):
     classdocs
     '''
     _db="User"
-    
+
     id = IntegerField('user_id', True)
     name = StringField('username')
     nickname = StringField('nickname')
+    city = StringField('city')
 
     def updateNickname(self, userId, nickname):
         Model.update()
-    
